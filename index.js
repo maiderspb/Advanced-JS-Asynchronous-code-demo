@@ -120,15 +120,6 @@ async function printGithubUserProfile(username) {
     return null;
   }
 }
-
-printGithubUserProfile("octocat").then((profile) => {
-  if (profile) {
-    console.log(profile);
-  } else {
-    console.log("No se pudo obtener el perfil.");
-  }
-});
-
 async function getAndPrintGitHubUserProfile(username) {
   const url = `https://api.github.com/users/${username}`;
 
